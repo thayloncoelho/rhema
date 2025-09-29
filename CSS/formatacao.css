@@ -1,0 +1,250 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Fundo */
+.bg {
+  background-image: url("/imagens/fundorhe.png"); 
+  /* background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px; */
+}
+
+/* Header */
+.header {
+  position: relative;
+  height: 80px;
+  padding: 0 20px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icons {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.icons img {
+  width: 30px;
+  height: auto;
+}
+
+/* Caixa branca principal */
+.box-main {
+  max-width: 900px;
+  height: 1000px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Textos */
+.title {
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+}
+
+/* Vídeo */
+.video-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.video-wrap video {
+  width: 700px;
+  max-width: 700px;
+  height: 370px;
+  border-radius: 5px;
+  border: 0.01px solid #ffffff;
+}
+
+/* Seção CTA */
+.cta {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-box {
+  position: relative;
+  max-width: 1100px;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-text {
+  max-width: 500px;
+}
+
+.cta-text h2 {
+  margin-bottom: 20px;
+}
+
+.cta-img {
+  position: absolute;
+  right: -100px;
+  bottom: -9px;
+}
+
+.cta-img img {
+  width: 250px;
+  height: auto;
+  border-radius: 90px;
+}
+
+.anmlg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 252, 252);
+  
+    /* padding: 30px; */
+}
+
+.animalg img{
+  width: 50px;
+  height: 60px;
+  
+}
+
+/* Seção do anjo */
+.anjo-sec {
+  padding: 80px 100px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  /* border: 1px solid white; */
+  /* border-top: 1px dashed white; */
+  /* border-bottom:1px dashed rgb(255, 255, 255) ; */
+}
+
+.anjo-wrap {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anjo img {
+  max-width: 100%; 
+  overflow: hidden;
+  /* border-radius:50% ; */
+  height: auto;
+}
+
+.caixa {
+  position: absolute;
+  width: 300px;
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.caixa h3 {
+  margin-bottom: 50px;
+}
+
+.caixa-left {
+  left: 0;
+  top: 30px;
+}
+
+.caixa-right {
+  right: 0;
+  bottom: 20px;
+}
+
+.full-height {
+    padding: 20px 40px;
+    background-color: black;
+    /* border: 1px solid rgb(255, 255, 255); */
+    /* border-bottom: 1px dashed white; */
+}
+
+.full-height img{
+    display: block; 
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* .qs{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: black;
+    color: #ffffff;
+    height: 100vh;
+}
+
+.qs h5{
+  padding: 40px;
+}
+
+ .ps{
+  padding:px;
+  text-align: center;
+}
+
+.caixasqs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+
+/*.logomaislgl img{
+  padding: 20px;
+  width: 800px;
+  height: 510px;
+} */
+
+
+.caixa {
+  padding: 80px 20px;
+  position: relative; /* necessário pro ::before funcionar */
+  width: 250px;
+  height: 300px;
+  background: #f9f9f9;
+  /*border: 1px solid #ccc;*/ /*borda normal  */
+}
+
+.caixa::before {
+
+  content: ""; 
+  position: absolute;
+  top: 0; /* topo da caixa */
+  left: 0; /* começa no lado esquerdo */
+  width: 50%; /* ocupa só metade da largura */
+  height: 2px; /* espessura da linha */
+  background: rgb(255, 0, 0); /* cor da borda */
+}
+
+
+
