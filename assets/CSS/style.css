@@ -5,7 +5,7 @@
 }
 
 body {
-	background-image: url(/imagens/bck-grnd-rhema.png);
+	background-image: url(../imagens/bck-grnd-rhema.png);
 	overflow-x: hidden;
 	justify-content: center;
 	display: flex;
