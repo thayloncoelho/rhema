@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(imagens/Logotipo\ Monograma\ Elegante\ Preto.png);
+  background-image: url(/imagens/bckgr-rhema.png);
   overflow-x: hidden;
   justify-content: center;
   display: flex;
