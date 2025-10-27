@@ -1,0 +1,685 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/imagens/Logotipo\ Monograma\ Elegante\ Preto.png);
+  overflow-x: hidden;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 130px;
+  border-bottom: 1px solid #383737;
+  color: rgb(255, 255, 255);
+}
+
+header img {
+  position: absolute;
+  left: -200px;
+  height: 500px;
+}
+
+header p {
+  position: absolute;
+  left: 745px;
+}
+
+.icons {
+  height: 30px;
+}
+
+header .icons {
+  position: absolute;
+  left: 1055px;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  height: auto;
+  background-color: #000000;
+}
+
+section video {
+  width: 1000px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.imagem1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.imagem1 img {
+  width: 1000px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.textoimg1 {
+  position: absolute;
+  color: white;
+  text-align: right;
+  top: 55%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  font-family: "Anton", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.textoimg1 h2 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* subtítulo */
+.textoimg1 p {
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.4;
+}
+
+.textoimg1 strong {
+  font-weight: bold;
+}
+
+.imagem1 img {
+  width: 1000px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* .rotating-container {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+}
+
+
+.rotating-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotate 10s linear infinite;
+}
+
+.rotating-text span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: 0 100px;
+    font-size: 15px;
+    color: white;
+}
+
+.rotating-text span:nth-child(1) { transform: rotate(0deg); }
+.rotating-text span:nth-child(2) { transform: rotate(30deg); }
+.rotating-text span:nth-child(3) { transform: rotate(60deg); }
+.rotating-text span:nth-child(4) { transform: rotate(90deg); }
+.rotating-text span:nth-child(5) { transform: rotate(120deg); }
+.rotating-text span:nth-child(6) { transform: rotate(150deg); }
+.rotating-text span:nth-child(7) { transform: rotate(180deg); }
+.rotating-text span:nth-child(8) { transform: rotate(210deg); }
+.rotating-text span:nth-child(9) { transform: rotate(240deg); }
+.rotating-text span:nth-child(10) { transform: rotate(270deg); }
+.rotating-text span:nth-child(11) { transform: rotate(300deg); }
+.rotating-text span:nth-child(12) { transform: rotate(330deg); }
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+*/
+
+.lgr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+}
+
+.lgr img {
+  max-width: 60px;
+  border-radius: 0;
+}
+
+.rotating-container {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 230px;
+  height: 230px;
+  transform: translate(-50%, -50%);
+}
+
+/* texto circular */
+.circle-text {
+  font-weight: bolder;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 3px; /* espaço consistente entre caracteres */
+  animation: spin 20s linear infinite;
+}
+
+/* letras ao redor */
+.circle-text span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform-origin: 0 115px; /* define o raio */
+}
+
+/* distribuição das 45 letras (aprox 8° cada) */
+.circle-text span:nth-child(1) {
+  transform: rotate(0deg);
+}
+.circle-text span:nth-child(2) {
+  transform: rotate(8deg);
+}
+.circle-text span:nth-child(3) {
+  transform: rotate(16deg);
+}
+.circle-text span:nth-child(4) {
+  transform: rotate(24deg);
+}
+.circle-text span:nth-child(5) {
+  transform: rotate(32deg);
+}
+.circle-text span:nth-child(6) {
+  transform: rotate(40deg);
+}
+.circle-text span:nth-child(7) {
+  transform: rotate(48deg);
+}
+.circle-text span:nth-child(8) {
+  transform: rotate(56deg);
+}
+.circle-text span:nth-child(9) {
+  transform: rotate(64deg);
+}
+.circle-text span:nth-child(10) {
+  transform: rotate(72deg);
+}
+.circle-text span:nth-child(11) {
+  transform: rotate(80deg);
+}
+.circle-text span:nth-child(12) {
+  transform: rotate(88deg);
+}
+.circle-text span:nth-child(13) {
+  transform: rotate(96deg);
+}
+.circle-text span:nth-child(14) {
+  transform: rotate(104deg);
+}
+.circle-text span:nth-child(15) {
+  transform: rotate(112deg);
+}
+.circle-text span:nth-child(16) {
+  transform: rotate(120deg);
+}
+.circle-text span:nth-child(17) {
+  transform: rotate(128deg);
+}
+.circle-text span:nth-child(18) {
+  transform: rotate(136deg);
+}
+.circle-text span:nth-child(19) {
+  transform: rotate(144deg);
+}
+.circle-text span:nth-child(20) {
+  transform: rotate(152deg);
+}
+.circle-text span:nth-child(21) {
+  transform: rotate(160deg);
+}
+.circle-text span:nth-child(22) {
+  transform: rotate(168deg);
+}
+.circle-text span:nth-child(23) {
+  transform: rotate(176deg);
+}
+.circle-text span:nth-child(24) {
+  transform: rotate(184deg);
+}
+.circle-text span:nth-child(25) {
+  transform: rotate(192deg);
+}
+.circle-text span:nth-child(26) {
+  transform: rotate(200deg);
+}
+.circle-text span:nth-child(27) {
+  transform: rotate(208deg);
+}
+.circle-text span:nth-child(28) {
+  transform: rotate(216deg);
+}
+.circle-text span:nth-child(29) {
+  transform: rotate(224deg);
+}
+.circle-text span:nth-child(30) {
+  transform: rotate(232deg);
+}
+.circle-text span:nth-child(31) {
+  transform: rotate(240deg);
+}
+.circle-text span:nth-child(32) {
+  transform: rotate(248deg);
+}
+.circle-text span:nth-child(33) {
+  transform: rotate(256deg);
+}
+.circle-text span:nth-child(34) {
+  transform: rotate(264deg);
+}
+.circle-text span:nth-child(35) {
+  transform: rotate(272deg);
+}
+.circle-text span:nth-child(36) {
+  transform: rotate(280deg);
+}
+.circle-text span:nth-child(37) {
+  transform: rotate(288deg);
+}
+.circle-text span:nth-child(38) {
+  transform: rotate(296deg);
+}
+.circle-text span:nth-child(39) {
+  transform: rotate(304deg);
+}
+.circle-text span:nth-child(40) {
+  transform: rotate(312deg);
+}
+.circle-text span:nth-child(41) {
+  transform: rotate(320deg);
+}
+.circle-text span:nth-child(42) {
+  transform: rotate(328deg);
+}
+.circle-text span:nth-child(43) {
+  transform: rotate(336deg);
+}
+.circle-text span:nth-child(44) {
+  transform: rotate(344deg);
+}
+.circle-text span:nth-child(45) {
+  transform: rotate(352deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.lgr {
+  position: absolute;
+  top: 52%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+}
+
+.lgr img {
+  width: 100%;
+  height: auto;
+}
+
+/*? ############# section ############# */
+.container-imgs-lpg {
+	display: grid;
+	width: 100%;
+	height: 500px;
+	/* margin-bottom: 120px; */
+	margin-top: 60px;
+}
+
+.text-imgs-lpg {
+	margin-bottom: 80px;
+	color: white;
+	font-size: 26px;
+	left: 10px;
+	font-weight: bolder;
+}
+
+.text-imgs-lpg h1 {
+	margin-top: 80px;
+}
+
+.carrossel {
+	margin-top: 10px;
+	overflow: hidden;
+	width: 100%;
+	height: 180px;
+	display: flex;
+	align-items: center;
+	
+}
+
+.box_shdw-crrsl {
+	position: absolute;
+	width: 100%;
+	height: 180px;
+	box-shadow: inset #000000 40px 0 50px,
+		inset #000000 -50px 0 50px; /* sombra nas laterais */
+	z-index: 2;
+	pointer-events: none; /* permite clicar nos elementos abaixo */
+}
+
+.faixa {
+	display: flex;
+	width: calc(500%); /* 2x pois duplicamos as imagens */
+	animation: deslizar 60s linear infinite normal;
+}
+
+.faixa img {
+	width: 20%;
+	object-fit: cover;
+}
+
+@keyframes deslizar {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-180%);
+	}
+}
+
+
+.container-etapas {
+	margin-top: 100px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	z-index: 1;
+}
+
+.etapas {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.etapa {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+
+}
+
+.etapas .txt2, .txt3, .txt4 {
+  z-index: -1;
+  /* position: absolute; */
+  opacity: 0;
+}
+
+.etapa .txt2 {
+	justify-content: space-between;
+	transform: translateX(-500px);
+	transition: all 20s ease-out;
+}
+
+.txt2.visivel {
+  transition: all 80s ease-in;
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.etapa .txt3 {
+	justify-content: space-between;
+	transform: translateX(-500px);
+	transition: all 0.20s ease-out;
+}
+
+.etapa .txt4 {
+	justify-content: space-between;
+	transform: translateX(-500px);
+	transition: all 0.20s ease-out;
+}
+
+.txt2.visivel {
+  transition: all 0.80s ease-in;
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.txt3.visivel {
+  transition: all 0.80s ease-in;
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.etapa .txt4 {
+	justify-content: space-between;
+	transform: translateX(-500px);
+	transition: all 0.20s ease-out;
+}
+
+.txt4.visivel {
+  transition: all 0.80s ease-in;
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.etapa .texto-etapa {
+	align-items: flex-start;
+	justify-content: space-between;
+	transform: translateX(-100px);
+	transition: all 0.6s ease-out;
+}
+
+.texto-etapa.visivel {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.texto-etapa {
+  font-family: "Poppins", sans-serif;
+	
+	/* background-color: #2c2c2c; */
+	color: white;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
+	margin-top: 10px;
+	width: 180px;
+	height: 130px;
+	border-radius: 5px;
+	z-index: 1;
+}
+
+.texto-etapa h3,
+p {
+	margin: 10px;
+	text-align: left;
+}
+
+.seta-etapas {
+	display: flex;
+	margin: 12px 0 0;
+	z-index: 0;
+}
+
+.etapa .seta-etapas {
+	justify-content: space-between;
+	transform: translateX(-150px);
+	transition: all 0.6s ease-out;
+  opacity: 0;
+}
+
+.seta-etapas.visivel {
+	opacity: 1;
+	transform: translateX(0);
+}
+/*? ############# section ############# */
+
+/* .hvv{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.hvv img{
+  width:1000px ;  
+  height: auto;             
+  border-radius: 10px; 
+} */
+.hvv {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hvv img {
+  width: 1000px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.mgcx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mgcx img {
+  position: relative;
+  margin: 20px;
+  width: 1000px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.caixa {
+  position: absolute;
+  width: 700px;
+  height: 450px;
+  border-radius: 60px;
+  border: 2px solid white;
+}
+
+.caixa h1 {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.caixa .chamado {
+  font-weight: bolder;
+}
+
+.caixa img {
+  position: absolute;
+  height: 60px;
+  width: 350px;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+
+.etapa h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.uts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uts img {
+  position: relative;
+  margin: 20px;
+  width: 1000px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.whatsapp-float{
+  position: fixed;
+  right: 20px;          
+  bottom: 20px;         
+  z-index: 9999;        
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: #25D366; 
+  color: white;         
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  will-change: transform;
+}
+
+
+.whatsapp-float:hover,
+.whatsapp-float:focus{
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.28);
+  outline: none;
+}
+
+
+.whatsapp-float:focus{
+  box-shadow: 0 0 0 4px rgba(37,211,102,0.18);
+}
+
+
+@media (max-width: 480px){
+  .whatsapp-float{
+    right: 14px;
+    bottom: 14px;
+    width: 48px;
+    height: 48px;
+  }
+  .whatsapp-float svg{
+    width: 22px;
+    height: 22px;
+  }
+}

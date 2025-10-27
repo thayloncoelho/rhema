@@ -1,0 +1,21 @@
+.ibm-plex-sans-uniquifier {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+	font-variation-settings: "height" 60, "width" 300;
+}
+
+.bbh-sans-bartle-regular {
+	font-family: "BBH Sans Bartle", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	transform: scaleX(0.9) scaleY(1.2);
+	display: inline-block; /* importante pra aplicar o transform direitinho */
+	line-height: 0.9; /* <-- diminui o espaço entre as linhas */
+}
+
+/* .texto {
+  font-family: "Inter Variable", sans-serif;
+  font-variation-settings: "wght" 400, "wdth" 120;
+} */
