@@ -2,75 +2,30 @@
 
 /* Tablets (até 1024px) */
 @media (max-width: 1024px) {
-	header {
-	}
-
-	header img {
-		/* left: -120px; */
-		/* height: 300px; */
-	}
-
-	header p {
-		left: 50%;
-		transform: translateX(-50%);
-	}
-
-	.video section video {
-		width: 90%;
-	}
-
-	.imagem1 img {
-		width: 90%;
-	}
-
-	.textoimg1 {
-		top: 50%;
-		left: 65%;
-		font-size: 0.9rem;
-	}
-
-	.circle-text {
-		font-size: 11px;
-		letter-spacing: 2px;
-	}
-
-	.carrossel {
-		height: 150px;
-	}
-
-	.faixa img {
-		width: 25%;
-	}
-
-	.texto-etapa {
-		width: 150px;
-		font-size: 12px;
-	}
-
-	.caixa {
-		width: 550px;
-		height: 400px;
-	}
-
-	.caixa h1 {
-		font-size: 22px;
-		left: 35%;
-	}
-
-	.caixa img {
-		width: 280px;
-		height: 50px;
-	}
+	
 }
 
 /* Smartphones grandes (até 768px) */
-@media (max-width: 880px) {
+@media (max-width: 980px) {
 	html,
 	body {
+		width: 120%;
+		max-width: 110%;
+		overflow-x: hidden;
 		margin: 0;
 		padding: 0;
 		flex-direction: column;
 	}
+
+	.video section video,
+	.imagem1 img,
+	.hvv img,
+	.mgcx img,
+	.uts img {
+		width: 98%;
+	}
+
+	/** header */
 
 	header {
 		width: 100%;
@@ -84,69 +39,56 @@
 
 	header img {
 		position: relative;
-		left: -30px;
 		height: auto;
 		justify-content: center;
 		align-items: center;
 		max-width: 200px;
 	}
 
-	.img-aling{
-		left: -40px;
-	}
-
-	header > .img-seg {
-		position: relative;
-		margin-bottom: 10px;
-		width: 200%;
-		height: auto;
+	.img-seg {
+		display: none;
 	}
 
 	header p {
-		position: relative;
-		left: -200px;
+		display: none;
 	}
 
-	header .icons {
-		position: relative;
-		left: 50px;
-		margin-top: 10px;
-	}
+	/** header */
 
+	/*? ########### section ###########  */
+	/** video */
 	.video video {
-		width: 110%;
-	}
-
-	.video section video,
-	.imagem1 img,
-	.hvv img,
-	.mgcx img,
-	.uts img {
-		width: 110%;
-	}
-
-	.imagem1 {
+		width: 100%;
 		justify-content: center;
-		left: 113px;
+	}
+	/** video */
+	/*? ########### section ###########  */
+
+	/*? ########### section ###########  */
+	/** imagem com a animação de redemoinho */
+	body .imagem1 {
+		justify-content: center;
+		align-items: center;
+		left: 16%;
 	}
 
 	.textoimg1 {
 		position: relative;
-		left: -250px;
+		left: -40%;
 		transform: none;
 
 		h2 {
-			font-size: 1.8rem;
+			font-size: 2rem;
 		}
 
 		p {
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 		}
 	}
 
 	.rotating-container {
-		top: 30%;
-		left: -4%;
+		top: 35%;
+		left: 1%;
 		width: 90px;
 		height: 90px;
 	}
@@ -159,24 +101,23 @@
 	}
 
 	.circle-text {
-		font-weight: bolder;
 		width: 100%;
 		height: 135%;
-		font-size: 8px;
-		animation: spin 20s linear infinite;
+		font-size: 9px;
 	}
 
 	.circle-text span {
-		position: absolute;
-		top: 0;
 		left: 50%;
 		transform-origin: 0 60px; /* define o raio */
 	}
+	/** imagem com a animação de redemoinho */
+	/*? ########### section ###########  */
 
 	/*? ########### section ###########  */
+
 	.carrossel {
-		width: 200%;
-		height: 180px;
+		max-width: 100%;
+		box-sizing: border-box;
 	}
 
 	.etapas {
@@ -190,12 +131,106 @@
 
 	.texto-etapa {
 		width: 70%;
-
 		font-size: 15px;
 		text-align: center;
 	}
 
+	.carrossel {
+		height: 80%;
+	}
+
+	.carrossel .faixa img {
+		width: 50%;
+	}
+
+	.box_shdw-crrsl {
+		width: 121%;
+		height: 19.2%;
+		box-shadow: inset #1b1b1b 20px 0 30px, inset #000000 -20px 0 30px;
+	}
+
+	/** animação de texto  */
+
+	.container-info {
+		margin-top: 100px;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	.etapas-extra {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.etapa-resposive {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	}
+	/** animations  */
+
+	.text-etapas-extra {
+	}
+
+	.etapa-resposive .text-etapas-extra {
+		opacity: 0;
+		justify-content: space-between;
+		transform: translateX(20px);
+		transition: all 0.2s ease-out;
+	}
+
+	.text-etapas-extra.visivel {
+		opacity: 1;
+		transform: translateX(0);
+		transition: all 0.8s ease-in;
+	}
+
+	/*! setas etapa  */
+	.seta-etapas {
+		display: flex;
+		margin: 12px 0 0 180px;
+		z-index: 0;
+	}
+
+	.etapa-resposive .seta-etapas {
+		justify-content: space-between;
+		transform: translateX(-150px);
+		transition: all 0.6s ease-out;
+		opacity: 0;
+	}
+
+	.seta-etapas.visivel {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	/** animations  */
+
+	.text-etapas-extra {
+		color: white;
+		font-family: "Poppins", sans-serif;
+		font-size: 16px;
+		font-weight: 500;
+		text-align: center;
+		margin-top: 10px;
+		width: 280px;
+		height: 130px;
+		border-radius: 5px;
+		z-index: 1;
+		margin-left: 10px;
+	}
+
+	.text-etapas-extra h3,
+	p {
+		margin: 10px;
+		text-align: left;
+	}
+	/** animação de texto  */
+
 	/*? ########### section ###########  */
+
 	/*? ########### section ###########  */
 
 	.hvv {
@@ -205,34 +240,54 @@
 	/*? ########### section ###########  */
 
 	.caixa {
-		width: 90%;
-		height: auto;
+		width: 100%;
+		height: 25%;
 		border-radius: 40px;
 		padding: 20px;
 	}
 
 	.caixa h1 {
-		position: relative;
-		left: 0;
-		top: 0;
-		transform: none;
-		text-align: center;
-		font-size: 20px;
+		left: 80px;
+		font-size: 24px;
 	}
 
 	.caixa img {
-		position: relative;
-		left: 0;
-		top: 0;
-		transform: none;
-		margin-top: 15px;
+		height: 50px;
+		width: 310px;
+		top: 20%;
+		left: 60%;
+		transform: translate(-50%, -50%);
 	}
 
+	.imsf {
+		height: 100%;
+		width: 150%;
+	} 
+	/*? ########### section ###########  */
+
+	/*? ########### footer ###########  */
+
+	.footer-container {
+		max-width: 90%;
+		margin: 0 0 8% 5%;
+	}
+
+	.footer p {
+		font-size: clamp(1.2rem, 2vw, 1rem);
+	}
+
+	/*? ########### footer ###########  */
+
 	.whatsapp-float {
-		right: 12px;
-		bottom: 12px;
-		width: 48px;
-		height: 48px;
+		right: 40px;
+		bottom: 40px;
+		width: 80px;
+		height: 80px;
+	}
+
+	.whatsapp-float svg {
+		width: 59%;
+		height: 59%;
 	}
 }
 

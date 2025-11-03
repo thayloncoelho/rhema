@@ -180,9 +180,9 @@
 			<section>
 				<div class="container-info">
 					<button class="toggle-info">Saiba mais sobre nosso processo</button>
-					<div class="etapas extra-info">
-						<div class="etapa">
-							<div class="texto-etapa txt1">
+					<div class="extra-info">
+						<div class="etapa-resposive">
+							<div class="text-etapas-extra">
 								<h3>Imersão</h3>
 								<p>
 									Entregamos um material que comunica com força, gera presença e deixa
@@ -193,8 +193,8 @@
 								<img src="assets/img/seta-etapas.jpg" alt="" />
 							</div>
 						</div>
-						<div class="etapa txt2">
-							<div class="texto-etapa">
+						<div class="etapa-resposive">
+							<div class="text-etapas-extra">
 								<h3>Produção</h3>
 								<p>
 									Definimos conceito, narrativa e linguagem visual. Gravamos com padrão
@@ -205,8 +205,8 @@
 								<img src="assets/img/seta-etapas.jpg" alt="" />
 							</div>
 						</div>
-						<div class="etapa txt3">
-							<div class="texto-etapa">
+						<div class="etapa-resposive">
+							<div class="text-etapas-extra">
 								<h3>Pós-produção</h3>
 								<p>
 									Edição, color grading, trilha e narrativa — o ponto onde o filme ganha
@@ -217,8 +217,8 @@
 								<img src="assets/img/seta-etapas.jpg" alt="" />
 							</div>
 						</div>
-						<div class="etapa txt4">
-							<div class="texto-etapa">
+						<div class="etapa-resposive">
+							<div class="text-etapas-extra">
 								<h3>Entrega</h3>
 								<p>
 									Entregamos um material que comunica com força, gera presença e deixa
@@ -251,6 +251,15 @@
 			<section class="uts">
 				<img src="assets/img/rhema.jpg" alt="" />
 			</section>
+			<footer class="footer">
+				<div class="footer-container">
+					<p>
+						© <span id="year"></span> RHEMA Filmes — Todos os direitos reservados.
+						Desenvolvido por <strong>UNIMIND</strong> em parceria com
+						<strong>RHEMA Filmes</strong>.
+					</p>
+				</div>
+			</footer>
 		</div>
 		<a
 			class="whatsapp-float"
@@ -272,7 +281,7 @@
 
 		<script>
 			const etapas = document.querySelectorAll(
-				".texto-etapa, .seta-etapas, .txt2, .txt3, .txt4",
+				".texto-etapa, .seta-etapas, .etapa, .text-etapas-extra, toggle-info",
 			);
 
 			const observer = new IntersectionObserver(
