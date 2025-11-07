@@ -2,39 +2,32 @@
 
 /* Tablets (até 1024px) */
 @media (max-width: 1024px) {
-	
 }
 
 /* Smartphones grandes (até 768px) */
-@media (max-width: 980px) {
+@media (max-width: 900px) {
 	html,
 	body {
-		width: 120%;
-		max-width: 110%;
-		overflow-x: hidden;
 		margin: 0;
 		padding: 0;
-		flex-direction: column;
+		overflow-x: hidden;
+		width: 100%;
+		max-width: 100%;
 	}
 
-	.video section video,
 	.imagem1 img,
 	.hvv img,
 	.mgcx img,
 	.uts img {
-		width: 98%;
+		width: 94%;
+		height: auto;
 	}
 
 	/** header */
 
 	header {
-		width: 100%;
 		display: flex;
-		padding: 0;
 		justify-content: center;
-		margin: auto;
-		border-bottom: 1px solid #383737;
-		color: rgb(255, 255, 255);
 	}
 
 	header img {
@@ -42,7 +35,11 @@
 		height: auto;
 		justify-content: center;
 		align-items: center;
-		max-width: 200px;
+	}
+
+	.img-logo {
+		width: 60%;
+		height: auto;
 	}
 
 	.img-seg {
@@ -66,36 +63,39 @@
 
 	/*? ########### section ###########  */
 	/** imagem com a animação de redemoinho */
-	body .imagem1 {
-		justify-content: center;
-		align-items: center;
-		left: 16%;
+
+	.imagem1 .img-primary {
+		width: 110%;
+		height: auto;
+	}
+
+	.imagem1 {
+		transform: scale(0.98);
+		transform-origin: top center;
 	}
 
 	.textoimg1 {
-		position: relative;
-		left: -40%;
-		transform: none;
+		left: 68%;
 
 		h2 {
-			font-size: 2rem;
+			font-size: clamp(1.8rem, 5vw, 2rem);
 		}
 
 		p {
-			font-size: 0.9rem;
+			font-size: clamp(1rem, 2.5vw, 1rem);
 		}
 	}
 
 	.rotating-container {
-		top: 35%;
-		left: 1%;
+		top: 33%;
+		left: 17%;
 		width: 90px;
 		height: 90px;
 	}
 
 	.lgr {
-		left: 50%;
-		top: 65%;
+		left: 53%;
+		top: 69%;
 		width: 30px;
 		height: 30px;
 	}
@@ -115,38 +115,24 @@
 
 	/*? ########### section ###########  */
 
-	.carrossel {
-		max-width: 100%;
-		box-sizing: border-box;
-	}
-
-	.etapas {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.etapas {
-		right: -100px;
-	}
-
-	.texto-etapa {
-		width: 70%;
-		font-size: 15px;
-		text-align: center;
+	.text-imgs-lpg {
+		font-size: 130%;
 	}
 
 	.carrossel {
-		height: 80%;
+		width: 100%;
+		height: auto;
 	}
 
-	.carrossel .faixa img {
+	.conteiner-carrossel img {
 		width: 50%;
+		height: auto;
 	}
 
 	.box_shdw-crrsl {
-		width: 121%;
+		width: 100%;
 		height: 19.2%;
-		box-shadow: inset #1b1b1b 20px 0 30px, inset #000000 -20px 0 30px;
+		box-shadow: inset #000000 20px 0 30px, inset #000000 -20px 0 30px;
 	}
 
 	/** animação de texto  */
@@ -158,21 +144,12 @@
 		gap: 20px;
 	}
 
-	.etapas-extra {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
 	.etapa-resposive {
 		display: flex;
 		align-items: center;
 		gap: 40px;
 	}
 	/** animations  */
-
-	.text-etapas-extra {
-	}
 
 	.etapa-resposive .text-etapas-extra {
 		opacity: 0;
@@ -190,7 +167,7 @@
 	/*! setas etapa  */
 	.seta-etapas {
 		display: flex;
-		margin: 12px 0 0 180px;
+		margin: 12px 0 0 140px;
 		z-index: 0;
 	}
 
@@ -210,13 +187,13 @@
 
 	.text-etapas-extra {
 		color: white;
-		font-family: "Poppins", sans-serif;
-		font-size: 16px;
+		font-family: "Korolev", sans-serif;
+		font-size: 18px;
 		font-weight: 500;
 		text-align: center;
 		margin-top: 10px;
-		width: 280px;
-		height: 130px;
+		width: 290px;
+		height: auto;
 		border-radius: 5px;
 		z-index: 1;
 		margin-left: 10px;
@@ -240,29 +217,26 @@
 	/*? ########### section ###########  */
 
 	.caixa {
-		width: 100%;
-		height: 25%;
+		width: 78%;
+		height: 18%;
 		border-radius: 40px;
 		padding: 20px;
 	}
 
 	.caixa h1 {
-		left: 80px;
-		font-size: 24px;
+		left: 15%;
+
+		font-size: 100%;
 	}
 
 	.caixa img {
-		height: 50px;
-		width: 310px;
-		top: 20%;
-		left: 60%;
+		height: auto;
+		width: 220px;
+		top: 10%;
+		left: 56%;
 		transform: translate(-50%, -50%);
 	}
 
-	.imsf {
-		height: 100%;
-		width: 150%;
-	} 
 	/*? ########### section ###########  */
 
 	/*? ########### footer ###########  */
@@ -353,4 +327,135 @@
 		width: 44px;
 		height: 44px;
 	}
+}
+
+@media (max-width: 450px) {
+	/*? ########### section ###########  */
+	.video video {
+		width: 110%;
+	}
+	/*? ########### section ###########  */
+
+	/*? ########### section ###########  */
+	/** imagem com a animação de redemoinho */
+	.imagem1 {
+		transform: scale(1.02);
+		transform-origin: top center;
+	}
+
+	.textoimg1 {
+		left: 68%;
+
+		h2 {
+			font-size: clamp(1rem, 5vw, 2rem);
+		}
+
+		p {
+			font-size: clamp(0.8rem, 2vw, 1rem);
+		}
+	}
+
+	.circle-text {
+		width: 30%;
+		height: 30%;
+		top: 45%;
+		left: 38%;
+		font-size: 7px;
+		display: flex;
+	}
+
+	.circle-text span {
+		top: -130%;
+		left: 46%;
+		transform-origin: 0 50px; /* define o raio */
+	}
+
+	.lgr {
+		left: 53%;
+		top: 60%;
+	}
+
+	/** imagem com a animação de redemoinho */
+	/*? ########### section ###########  */
+
+	/*? ########### section ###########  */
+
+	.text-imgs-lpg {
+		margin-bottom: 0;
+	}
+
+	.text-imgs-lpg h1 {
+		margin-top: 0;
+		margin-left: 8px;
+		margin-bottom: 40px;
+		font-size: 240%;
+	}
+
+	.carrossel {
+		width: 100%;
+		height: auto;
+	}
+
+	.conteiner-carrossel img {
+		width: 65%;
+		height: auto;
+	}
+
+	/*? ########### section ###########  */
+
+	/*? ########### section ###########  */
+
+	/** animations  */
+
+	.etapa-resposive {
+		margin-bottom: 10px;
+	}
+
+	/*! setas etapa  */
+	.seta-etapas {
+		margin: 12px 0 0 100px;
+	}
+
+	/** animations  */
+
+	.text-etapas-extra {
+		font-size: 17px;
+		width: 260px;
+		height: auto;
+	}
+
+	.text-etapas-extra h3,
+	p {
+		margin: 0;
+		margin-bottom: 3%;
+		text-align: left;
+	}
+	/** animação de texto  */
+
+	/*? ########### section ###########  */
+
+	/*? ########### section ###########  */
+
+	.caixa {
+		transform: scale(1.08);
+		transform-origin: top center;
+		width: 78%;
+		height: 18%;
+		border-radius: 25px;
+	}
+
+	.caixa h1 {
+		left: 13%;
+		font-size: clamp(1rem, 3vw, 2rem);
+	}
+
+	.caixa img {
+		height: auto;
+		width: 57%;
+		top: 10%;
+		left: 56%;
+	}
+
+
+	/*? ########### section ###########  */
 }
