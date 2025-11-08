@@ -34,12 +34,12 @@ header img {
 .img-logo {
 	width: 14%;
 	height: auto;
-	left: 5%;
+	left: 8%;
 }
 
 header p {
 	position: absolute;
-	right: 21%;
+	right: 40%;
 	font-family: "Korolev";
 }
 
@@ -54,7 +54,7 @@ p strong {
 
 header .icons {
 	position: absolute;
-	right: 6%;
+	right: 7%;
 }
 
 /*? ############# section ############# */
