@@ -41,6 +41,7 @@ header p {
 	position: absolute;
 	right: 40%;
 	font-family: "Korolev";
+	font-size: 1.23vw;
 }
 
 p strong {
@@ -527,7 +528,7 @@ p {
 .mgcx img {
 	position: relative;
 	margin: 70px 20px;
-	width: 1000px;
+	width: 66%;
 	height: auto;
 	border-radius: 10px;
 }
@@ -553,7 +554,7 @@ p {
 
 .chamado {
 	font-weight: 900;
-	font-family: 'Korolev-Bold';
+	font-family: "Korolev-Bold";
 }
 
 .caixa img {
@@ -569,18 +570,42 @@ p {
 
 /*? ############# section ############# */
 
-.uts {
+.img-rf {
+	position: relative;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: flex;
+	text-align: center;
 }
 
-.uts img {
-	position: relative;
-	margin: 20px;
-	width: 1000px;
+.container-rf {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img-princ {
+	width: 66%;
 	height: auto;
 	border-radius: 10px;
+}
+
+.instagram, .youtube{
+	bottom: 15%;
+}
+
+.instagram {
+	position: absolute;
+	top: auto;
+	left: 22%;
+	width: 3%;
+	height: auto;
+}
+
+.youtube {
+	position: absolute;
+	top: auto;
+	left: 28%;
+	width: 4%;
+	height: auto;
 }
 /*? ############# section ############# */
 
@@ -593,19 +618,17 @@ p {
 	text-align: center;
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: flex;
+	justify-content: flex;
 }
 
 .footer-container {
-	max-width: 1000px;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .footer p {
 	font-size: clamp(0.8rem, 2vw, 1rem);
-	margin: 0;
 }
 
 .footer .creditos {

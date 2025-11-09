@@ -8,17 +8,15 @@
 @media (max-width: 900px) {
 	html,
 	body {
-		margin: 0;
-		padding: 0;
-		overflow-x: hidden;
-		width: 100%;
-		max-width: 100%;
+		background-image: url("../img/bck-grnd-rhema.png");
+		background-size: contain; /* ajusta pro tamanho da tela */
+		background-attachment: scroll; /* evita bug no mobile */
 	}
 
 	.imagem1 img,
 	.hvv img,
 	.mgcx img,
-	.uts img {
+	.img-rf img {
 		width: 94%;
 		height: auto;
 	}
@@ -26,28 +24,41 @@
 	/** header */
 
 	header {
-		display: flex;
-		justify-content: center;
+		height: 90%;
 	}
 
 	header img {
-		position: relative;
-		height: auto;
-		justify-content: center;
-		align-items: center;
+		position: absolute;
+		top: 38%;
 	}
 
 	.img-logo {
-		width: 60%;
+		width: 28%;
 		height: auto;
-	}
-
-	.img-seg {
-		display: none;
+		left: 3%;
 	}
 
 	header p {
-		display: none;
+		position: relative;
+		display: flex;
+		left: 32%;
+		font-family: "Korolev";
+		font-size: 2vw;
+		margin-top: 5%;
+	}
+
+	p strong {
+		font-weight: 980;
+	}
+
+	.icons {
+		width: 30%;
+		height: auto;
+	}
+
+	header .icons {
+		position: absolute;
+		right: 2%;
 	}
 
 	/** header */
@@ -239,15 +250,33 @@
 
 	/*? ########### section ###########  */
 
+	.instagram,
+	.youtube {
+		bottom: 14%;
+	}
+
+	.instagram {
+		top: auto;
+		left: 10%;
+		width: 5%;
+	}
+
+	.youtube {
+		position: absolute;
+		top: auto;
+		left: 18%;
+		width: 7%;
+	}
+	/*? ########### section ###########  */
+
 	/*? ########### footer ###########  */
 
 	.footer-container {
 		max-width: 90%;
-		margin: 0 0 8% 5%;
 	}
 
 	.footer p {
-		font-size: clamp(1.2rem, 2vw, 1rem);
+		font-size: clamp(1rem, 2vw, 1.8rem);
 	}
 
 	/*? ########### footer ###########  */
@@ -265,71 +294,41 @@
 	}
 }
 
-/* Smartphones pequenos (até 480px) */
-@media (max-width: 480px) {
-	body {
-		background-size: cover;
+@media (max-width: 431px) {
+	header img {
+		position: absolute;
+		top: 38%;
 	}
 
-	header {
-		padding: 15px;
+	.img-logo {
+		width: 26%;
+		height: auto;
+		left: 3%;
 	}
 
-	.video section video {
-		width: 100%;
+	header p {
+		position: relative;
+		display: flex;
+		left: 32%;
+		font-family: "Korolev";
+		font-size: 2vw;
+		margin-top: 5%;
 	}
 
-	.imagem1 img,
-	.hvv img,
-	.mgcx img,
-	.uts img {
-		width: 100%;
+	p strong {
+		font-weight: 980;
 	}
 
-	.textoimg1 h2 {
-		font-size: 1.8rem;
+	.icons {
+		width: 28%;
+		height: auto;
 	}
 
-	.textoimg1 p {
-		font-size: 0.9rem;
+	header .icons {
+		position: absolute;
+		right: 2%;
 	}
 
-	.circle-text {
-		font-size: 9px;
-		letter-spacing: 1.5px;
-	}
-
-	.carrossel {
-		height: 120px;
-	}
-
-	.faixa img {
-		width: 33.3%;
-	}
-
-	.texto-etapa {
-		font-size: 12px;
-		width: 85%;
-	}
-
-	.caixa {
-		border-radius: 25px;
-		padding: 15px;
-	}
-
-	.caixa h1 {
-		font-size: 18px;
-	}
-
-	.whatsapp-float {
-		right: 10px;
-		bottom: 10px;
-		width: 44px;
-		height: 44px;
-	}
-}
-
-@media (max-width: 450px) {
 	/*? ########### section ###########  */
 	.video video {
 		width: 110%;
@@ -388,7 +387,7 @@
 		margin-top: 0;
 		margin-left: 8px;
 		margin-bottom: 40px;
-		font-size: 240%;
+		font-size: 190%;
 	}
 
 	.carrossel {
@@ -456,6 +455,281 @@
 		left: 56%;
 	}
 
+	/*? ########### section ###########  */
 
 	/*? ########### section ###########  */
+	.instagram,
+	.youtube {
+		bottom: 14%;
+	}
+
+	.instagram {
+		top: auto;
+		left: 10%;
+		width: 5%;
+	}
+
+	.youtube {
+		position: absolute;
+		top: auto;
+		left: 18%;
+		width: 7%;
+	}
+	/*? ########### section ###########  */
+
+	/*? ############# footer ############# */
+
+	.footer-container {
+		max-width: 100%;
+	}
+
+	.footer p {
+		font-size: clamp(0.8rem, 2vw, 1rem);
+		margin: 0;
+	}
+
+	.footer .creditos {
+		font-size: clamp(0.75rem, 1.8vw, 0.95rem);
+		opacity: 0.85;
+	}
+
+	.footer .creditos strong {
+		letter-spacing: 0.5px;
+	}
+
+	/*? ############# footer ############# */
+
+	.whatsapp-float {
+		right: 14px;
+		bottom: 14px;
+		width: 48px;
+		height: 48px;
+	}
+
+	.whatsapp-float svg {
+		width: 50%;
+		height: 50%;
+	}
+}
+
+@media (max-width: 381px) {
+	header img {
+		position: absolute;
+		top: 38%;
+	}
+
+	.img-logo {
+		width: 26%;
+		height: auto;
+		left: 3%;
+	}
+
+	header p {
+		position: relative;
+		display: flex;
+		left: 32%;
+		font-family: "Korolev";
+		font-size: 2vw;
+		margin-top: 5%;
+	}
+
+	p strong {
+		font-weight: 980;
+	}
+
+	.icons {
+		width: 28%;
+		height: auto;
+	}
+
+	header .icons {
+		position: absolute;
+		right: 2%;
+	}
+
+	/*? ########### section ###########  */
+	.video video {
+		width: 110%;
+	}
+	/*? ########### section ###########  */
+
+	/*? ########### section ###########  */
+	/** imagem com a animação de redemoinho */
+	.imagem1 {
+		transform: scale(1.02);
+		transform-origin: top center;
+	}
+
+	.textoimg1 {
+		left: 68%;
+
+		h2 {
+			font-size: clamp(0.8rem, 5vw, 1.2rem);
+		}
+
+		p {
+			font-size: clamp(0.8rem, 2vw, 1rem);
+		}
+	}
+
+	.circle-text {
+		width: 30%;
+		height: 30%;
+		top: 45%;
+		left: 38%;
+		font-size: 7px;
+		display: flex;
+	}
+
+	.circle-text span {
+		top: -130%;
+		left: 46%;
+		transform-origin: 0 50px; /* define o raio */
+	}
+
+	.lgr {
+		left: 53%;
+		top: 60%;
+	}
+
+	/** imagem com a animação de redemoinho */
+	/*? ########### section ###########  */
+
+	/*? ########### section ###########  */
+
+	.text-imgs-lpg {
+		margin-bottom: 0;
+	}
+
+	.text-imgs-lpg h1 {
+		margin-top: 0;
+		margin-left: 8px;
+		margin-bottom: 40px;
+		font-size: 190%;
+	}
+
+	.carrossel {
+		width: 100%;
+		height: auto;
+	}
+
+	.conteiner-carrossel img {
+		width: 59%;
+		height: auto;
+	}
+
+	/*? ########### section ###########  */
+
+	/*? ########### section ###########  */
+
+	/** animations  */
+
+	.etapa-resposive {
+		margin-bottom: 10px;
+	}
+
+	/*! setas etapa  */
+	.seta-etapas {
+		margin: 12px 0 0 100px;
+	}
+
+	/** animations  */
+
+	.text-etapas-extra {
+		font-size: 17px;
+		width: 260px;
+		height: auto;
+	}
+
+	.text-etapas-extra h3,
+	p {
+		margin: 0;
+		margin-bottom: 3%;
+		text-align: left;
+	}
+	/** animação de texto  */
+
+	/*? ########### section ###########  */
+
+	/*? ########### section ###########  */
+
+	.caixa {
+		transform: scale(1.08);
+		transform-origin: top center;
+		width: 78%;
+		height: 22%;
+		border-radius: 25px;
+		align-items: center;
+	}
+
+	.caixa h1 {
+		left: 12%;
+		font-size: clamp(0.9rem, 3vw, 2rem);
+	}
+
+	.caixa img {
+		height: auto;
+		width: 57%;
+		top: 5%;
+		left: 56%;
+	}
+
+	/*? ########### section ###########  */
+
+	/*? ############# section ############# */
+
+	.instagram,
+	.youtube {
+		bottom: 14%;
+	}
+
+	.instagram {
+		top: auto;
+
+		left: 10%;
+		width: 5%;
+	}
+
+	.youtube {
+		position: absolute;
+		top: auto;
+		left: 18%;
+		width: 7%;
+	}
+	/*? ############# section ############# */
+
+	/*? ############# footer ############# */
+
+	.footer-container {
+		width: 100%;
+		
+	}
+
+	.footer p {
+		font-size: clamp(0.8rem, 2vw, 1rem);
+		margin: 0;
+	}
+
+	.footer .creditos {
+		font-size: clamp(0.75rem, 1.8vw, 0.95rem);
+		opacity: 0.85;
+	}
+
+	.footer .creditos strong {
+		letter-spacing: 0.5px;
+	}
+
+	/*? ############# footer ############# */
+
+	.whatsapp-float {
+		right: 14px;
+		bottom: 14px;
+		width: 48px;
+		height: 48px;
+	}
+
+	.whatsapp-float svg {
+		width: 50%;
+		height: 50%;
+	}
 }
