@@ -16,145 +16,120 @@ body {
 	background-attachment: fixed; /* opcional, dá efeito de fundo fixo */
 }
 
+/*? ######### header ########  */
+
 header {
 	display: flex;
-	position: relative;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	padding: 0 40px;
+	text-align: center;
 	height: 130px;
 	background-color: black;
 	color: rgb(255, 255, 255);
-}
-
-header img {
-	position: absolute;
-}
-
-.img-logo {
-	width: 14%;
-	height: auto;
-	left: 8%;
+	gap: 15%;
 }
 
 header p {
-	position: absolute;
-	right: 40%;
+	display: flex;
 	font-family: "Korolev";
-	font-size: 1.23vw;
+	font-size: clamp(0.2rem, 2.5vw, 1.2rem);
 }
 
-p strong {
-	font-weight: 980;
-}
-
-.icons {
+header img {
 	width: 15%;
 	height: auto;
 }
 
-header .icons {
-	position: absolute;
-	right: 7%;
-}
+/*? ######### header ########  */
 
-/*? ############# section ############# */
-.video {
-	display: flex;
+.container-video,
+.imgUm-ltrGir,
+.container-img-dois,
+.container-img-tres,
+.container-rf {
 	justify-content: center;
-	padding: 30px;
-	height: auto;
-	background-color: #000000;
+	display: flex;
 }
 
-section video {
-	width: 1000px;
+.container-video video,
+.imgUm-ltrGir img,
+.container-img-dois img,
+.container-img-tres img,
+.container-rf .img-princ {
+	width: 65%;
 	height: auto;
 	border-radius: 10px;
 }
+
+/*? ############# section ############# */
+.container-video {
+	background-color: black;
+}
+
+.container-video video {
+	padding-bottom: 5%;
+}
 /*? ############# section ############# */
 
 /*? ############# section ############# */
-.imagem1 {
+
+.imgUm-ltrGir {
+	transform: scale(0.98);
 	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 30px;
-}
-
-.imagem1 img {
-	width: 1000px;
-	height: auto;
-	border-radius: 10px;
-	display: block;
+	margin-top: 5%;
 }
 
 .textoimg1 {
 	position: absolute;
 	color: white;
 	text-align: right;
-	top: 55%;
-	left: 66%;
-	transform: translate(-50%, -50%);
+	right: 22%;
+	bottom: 18%;
 }
 
 .textoimg1 h2 {
-	font-size: 3.2rem;
+	font-size: clamp(1rem, 4vw, 3rem);
 	line-height: 1;
 	font-weight: 200;
 	margin-bottom: 10px;
 	font-family: "Million Design", sans-serif;
 }
 
-/* subtítulo */
 .textoimg1 p {
-	font-size: 180%;
+	font-size: clamp(0.8rem, 2vw, 1.8rem);
 	line-height: 1;
 	display: contents;
 	font-family: "Korolev", sans-serif;
 }
 
-.textoimg1 strong {
-	font-weight: 800;
-}
-
-.imagem1 img {
-	width: 1000px;
-	height: auto;
-	border-radius: 10px;
-}
-/*? ############# section ############# */
-
-/*? ############# section ############# */
-
 .rotating-container {
+	transform: scale(0.98);
 	position: absolute;
-	top: 30%;
-	left: 30%;
-	width: 18%;
-	height: 38%;
-	transform: translate(-50%, -50%);
+	top: 8%;
+	left: 20%;
+	width: 16%;
+	height: 42%;
+	display: flex;
 }
 
 /* texto circular */
 .circle-text {
-	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	color: white;
-	font-size: 13px;
-	letter-spacing: 3px; /* espaço consistente entre caracteres */
+	font-size: clamp(0.4rem, 2vw, 1rem);
+	letter-spacing: 6px; /* espaço consistente entre caracteres */
 	animation: spin 20s linear infinite;
 }
 
 /* letras ao redor */
 .circle-text span {
+	transform: scale(0.98);
 	font-family: "Million Design", sans-serif;
 	position: absolute;
 	top: 0;
 	left: 50%;
-	transform-origin: 0 115px; /* define o raio */
+	transform-origin: 2px 115px; /* define o raio */
 }
 
 /* distribuição das 45 letras (aprox 8° cada) */
@@ -315,8 +290,6 @@ section video {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 50%;
-	height: 50%;
 }
 
 .lgr img {
@@ -350,54 +323,44 @@ section video {
 
 /*? ############# section ############# */
 .container-imgs-lpg {
-	width: 100%;
-	height: auto;
 	margin-top: 60px;
 }
 
 .text-imgs-lpg {
 	margin-bottom: 80px;
-	color: white;
-	font-size: 26px;
-	font-weight: bolder;
+	margin-top: 80px;
+	margin-left: 20px;
 }
 
 .text-imgs-lpg h1 {
-	margin-top: 80px;
-	margin-left: 20px;
-	font-size: 240%;
+	color: white;
 	font-family: "Million Design", sans-serif;
 	font-weight: 200;
 	line-height: 1em;
+	font-size: clamp(2.3rem, 5vw, 3.6rem);
 }
 
 .carrossel {
+	position: relative;
 	margin-top: 10px;
 	overflow-x: hidden;
 	width: 100%;
-
-	height: 180px;
+	height: auto;
 	display: flex;
-	align-items: center;
 	box-sizing: border-box;
-}
-
-.carrossel,
-.faixa {
-	max-width: 100%;
-	/* overflow-x: hidden; */
 }
 
 .box_shdw-crrsl {
 	position: absolute;
 	width: 100%;
-	height: 180px;
-	box-shadow: inset #000000 30px 0 50px, inset #000000 -50px 0 50px; /* sombra nas laterais */
+	height: 100%;
+	box-shadow: inset #000000 10px 0 80px, inset #000000 -50px 0 50px; /* sombra nas laterais */
 	z-index: 2;
 	pointer-events: none; /* permite clicar nos elementos abaixo */
 }
 
 .faixa {
+	transform: scale(0.98);
 	display: flex;
 	width: calc(500%); /* 2x pois duplicamos as imagens */
 	animation: deslizar 60s linear infinite normal;
@@ -426,11 +389,11 @@ section video {
 	position: relative;
 	margin-top: 7%;
 	justify-content: center;
-	right: -5%;
 }
 
 .etapas {
 	display: flex;
+	margin-left: 10%;
 }
 
 .etapa {
@@ -453,13 +416,12 @@ section video {
 
 .texto-etapa {
 	color: white;
-	font-size: 14px;
+	font-size: 100%;
 	font-weight: 400;
 	text-align: center;
-	width: 60%;
+	width: 65%;
 	height: auto;
-	border-radius: 5px;
-	z-index: 1;
+
 	h3 {
 		margin-bottom: 18px;
 	}
@@ -467,15 +429,13 @@ section video {
 
 .texto-etapa h3,
 p {
-	margin: 10px;
 	text-align: left;
-	font-family: "Korolev";
+	font-family: "Korolev", sans-serif;
 }
 
 .seta-etapas {
 	display: flex;
 	margin: 12px 0 0 50px;
-	z-index: 0;
 }
 
 .etapa .seta-etapas {
@@ -493,60 +453,33 @@ p {
 /*? ############# section ############# */
 
 /*? ############# section ############# */
-/* .hvv{
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-}
-
-.hvv img{
-  width:1000px ;  
-  height: auto;             
-  border-radius: 10px; 
-} */
-.hvv {
-	margin-top: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.hvv img {
-	width: 1000px;
-	height: auto;
-	border-radius: 10px;
+.container-img-dois {
+	margin: 8% 0;
 }
 /*? ############# section ############# */
 
 /*? ############# section ############# */
-.mgcx {
+.container-img-tres {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.mgcx img {
 	position: relative;
-	margin: 70px 20px;
-	width: 66%;
-	height: auto;
-	border-radius: 10px;
 }
 
 .caixa {
 	position: absolute;
+	display: flex;
+	margin: 5% 5%;
 	width: 50%;
-	height: 55%;
+	height: 75%;
 	border-radius: 60px;
 	border: 1px solid white;
+	align-items: center;
 }
 
 .caixa h1 {
-	position: absolute;
-	top: 30%;
-	left: 20%;
+	display: block;
+	margin-left: 15%;
 	color: white;
-	font-size: 180%;
+	font-size: clamp(0.2rem, 4vw, 2.5rem);
 	font-family: "Korolev", sans-serif;
 	line-height: 1.1em;
 	font-weight: 100;
@@ -558,37 +491,22 @@ p {
 }
 
 .caixa img {
-	position: absolute;
+	display: flex;
 	height: auto;
 	width: 50%;
-	top: 30%;
-	left: 62%;
-	transform: translate(-50%, -50%);
+	margin-top: 5%;
 }
 
 /*? ############# section ############# */
 
 /*? ############# section ############# */
-
-.img-rf {
-	position: relative;
-	display: flex;
-	justify-content: flex;
-	text-align: center;
-}
-
 .container-rf {
-	margin-left: auto;
-	margin-right: auto;
+	position: relative;
+	margin: 8% 0;
 }
 
-.img-princ {
-	width: 66%;
-	height: auto;
-	border-radius: 10px;
-}
-
-.instagram, .youtube{
+.instagram,
+.youtube {
 	bottom: 15%;
 }
 
@@ -669,17 +587,4 @@ p {
 
 .whatsapp-float:focus {
 	box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.18);
-}
-
-@media (max-width: 480px) {
-	.whatsapp-float {
-		right: 14px;
-		bottom: 14px;
-		width: 48px;
-		height: 48px;
-	}
-	.whatsapp-float svg {
-		width: 22px;
-		height: 22px;
-	}
 }

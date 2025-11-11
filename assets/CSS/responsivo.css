@@ -5,7 +5,7 @@
 }
 
 /* Smartphones grandes (até 768px) */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
 	html,
 	body {
 		background-image: url("../img/bck-grnd-rhema.png");
@@ -13,10 +13,11 @@
 		background-attachment: scroll; /* evita bug no mobile */
 	}
 
-	.imagem1 img,
-	.hvv img,
-	.mgcx img,
-	.img-rf img {
+	.container-video video,
+	.imgUm-ltrGir img,
+	.container-img-dois img,
+	.container-img-tres img,
+	.container-rf .img-princ {
 		width: 94%;
 		height: auto;
 	}
@@ -24,126 +25,62 @@
 	/** header */
 
 	header {
-		height: 90%;
+		display: flex;
+		gap: 2%;
 	}
 
 	header img {
-		position: absolute;
-		top: 38%;
-	}
-
-	.img-logo {
-		width: 28%;
+		width: 26%;
 		height: auto;
-		left: 3%;
 	}
 
 	header p {
-		position: relative;
 		display: flex;
-		left: 32%;
-		font-family: "Korolev";
-		font-size: 2vw;
-		margin-top: 5%;
 	}
 
 	p strong {
-		font-weight: 980;
-	}
-
-	.icons {
-		width: 30%;
-		height: auto;
-	}
-
-	header .icons {
-		position: absolute;
-		right: 2%;
+		font-weight: 900;
 	}
 
 	/** header */
 
 	/*? ########### section ###########  */
-	/** video */
-	.video video {
-		width: 100%;
-		justify-content: center;
-	}
-	/** video */
-	/*? ########### section ###########  */
-
-	/*? ########### section ###########  */
 	/** imagem com a animação de redemoinho */
 
-	.imagem1 .img-primary {
-		width: 110%;
-		height: auto;
-	}
-
-	.imagem1 {
-		transform: scale(0.98);
-		transform-origin: top center;
-	}
-
 	.textoimg1 {
-		left: 68%;
-
-		h2 {
-			font-size: clamp(1.8rem, 5vw, 2rem);
-		}
-
-		p {
-			font-size: clamp(1rem, 2.5vw, 1rem);
-		}
+		right: 10%;
 	}
 
 	.rotating-container {
-		top: 33%;
-		left: 17%;
-		width: 90px;
-		height: 90px;
-	}
-
-	.lgr {
-		left: 53%;
-		top: 69%;
-		width: 30px;
-		height: 30px;
-	}
-
-	.circle-text {
-		width: 100%;
-		height: 135%;
-		font-size: 9px;
+		top: 8%;
+		left: 10%;
+		width: 20%;
+		height: 46%;
 	}
 
 	.circle-text span {
-		left: 50%;
-		transform-origin: 0 60px; /* define o raio */
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		transform-origin: 2px 60px; /* define o raio */
+	}
+
+	.lgr img {
+		width: 60%;
+		height: auto;
 	}
 	/** imagem com a animação de redemoinho */
 	/*? ########### section ###########  */
 
 	/*? ########### section ###########  */
 
-	.text-imgs-lpg {
-		font-size: 130%;
-	}
-
-	.carrossel {
-		width: 100%;
-		height: auto;
-	}
-
 	.conteiner-carrossel img {
-		width: 50%;
+		width: 60%;
 		height: auto;
 	}
 
 	.box_shdw-crrsl {
-		width: 100%;
-		height: 19.2%;
-		box-shadow: inset #000000 20px 0 30px, inset #000000 -20px 0 30px;
+		box-shadow: inset #000000 5px -10px 30px, inset #000000 -5px -10px 30px;
 	}
 
 	/** animação de texto  */
@@ -221,31 +158,15 @@
 
 	/*? ########### section ###########  */
 
-	.hvv {
-		margin-top: 90px;
-	}
-
-	/*? ########### section ###########  */
-
 	.caixa {
-		width: 78%;
-		height: 18%;
+		width: 80%;
+		height: 80%;
 		border-radius: 40px;
-		padding: 20px;
 	}
-
-	.caixa h1 {
-		left: 15%;
-
-		font-size: 100%;
-	}
-
 	.caixa img {
+		width: 50%;
 		height: auto;
-		width: 220px;
-		top: 10%;
-		left: 56%;
-		transform: translate(-50%, -50%);
+		margin-top: 0;
 	}
 
 	/*? ########### section ###########  */
@@ -262,7 +183,6 @@
 	}
 
 	.youtube {
-		position: absolute;
 		top: auto;
 		left: 18%;
 		width: 7%;
@@ -272,11 +192,12 @@
 	/*? ########### footer ###########  */
 
 	.footer-container {
-		max-width: 90%;
+		width: 90%;
 	}
 
 	.footer p {
-		font-size: clamp(1rem, 2vw, 1.8rem);
+		font-size: clamp(1.2rem, 2vw, 1.8rem);
+		margin-bottom: 5%;
 	}
 
 	/*? ########### footer ###########  */
@@ -295,138 +216,143 @@
 }
 
 @media (max-width: 431px) {
-	header img {
-		position: absolute;
-		top: 38%;
+	.container-video video,
+	.imgUm-ltrGir img,
+	.container-img-dois img,
+	.container-img-tres img,
+	.container-rf .img-princ {
+		width: 94%;
+		height: auto;
 	}
 
-	.img-logo {
+	/** header */
+
+	header {
+		display: flex;
+		gap: 2%;
+	}
+
+	header img {
 		width: 26%;
 		height: auto;
-		left: 3%;
 	}
 
 	header p {
-		position: relative;
 		display: flex;
-		left: 32%;
-		font-family: "Korolev";
-		font-size: 2vw;
-		margin-top: 5%;
 	}
 
 	p strong {
-		font-weight: 980;
+		font-weight: 900;
 	}
 
-	.icons {
-		width: 28%;
-		height: auto;
-	}
-
-	header .icons {
-		position: absolute;
-		right: 2%;
-	}
-
-	/*? ########### section ###########  */
-	.video video {
-		width: 110%;
-	}
-	/*? ########### section ###########  */
+	/** header */
 
 	/*? ########### section ###########  */
 	/** imagem com a animação de redemoinho */
-	.imagem1 {
-		transform: scale(1.02);
-		transform-origin: top center;
-	}
 
 	.textoimg1 {
-		left: 68%;
-
-		h2 {
-			font-size: clamp(1rem, 5vw, 2rem);
-		}
-
-		p {
-			font-size: clamp(0.8rem, 2vw, 1rem);
-		}
+		right: 10%;
 	}
 
-	.circle-text {
-		width: 30%;
-		height: 30%;
-		top: 45%;
-		left: 38%;
-		font-size: 7px;
-		display: flex;
+	.rotating-container {
+		top: 8%;
+		left: 10%;
+		width: 20%;
+		height: 46%;
 	}
 
 	.circle-text span {
-		top: -130%;
-		left: 46%;
-		transform-origin: 0 50px; /* define o raio */
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		transform-origin: 2px 60px; /* define o raio */
 	}
 
-	.lgr {
-		left: 53%;
-		top: 60%;
+	.lgr img {
+		width: 60%;
+		height: auto;
 	}
-
 	/** imagem com a animação de redemoinho */
 	/*? ########### section ###########  */
 
 	/*? ########### section ###########  */
 
-	.text-imgs-lpg {
-		margin-bottom: 0;
-	}
-
-	.text-imgs-lpg h1 {
-		margin-top: 0;
-		margin-left: 8px;
-		margin-bottom: 40px;
-		font-size: 190%;
-	}
-
-	.carrossel {
-		width: 100%;
-		height: auto;
-	}
-
 	.conteiner-carrossel img {
-		width: 65%;
+		width: 60%;
 		height: auto;
 	}
 
-	/*? ########### section ###########  */
+	.box_shdw-crrsl {
+		box-shadow: inset #000000 5px -10px 30px, inset #000000 -5px -10px 30px;
+	}
 
-	/*? ########### section ###########  */
+	/** animação de texto  */
 
-	/** animations  */
+	.container-info {
+		margin-top: 100px;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+	}
 
 	.etapa-resposive {
-		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	}
+	/** animations  */
+
+	.etapa-resposive .text-etapas-extra {
+		opacity: 0;
+		justify-content: space-between;
+		transform: translateX(20px);
+		transition: all 0.2s ease-out;
+	}
+
+	.text-etapas-extra.visivel {
+		opacity: 1;
+		transform: translateX(0);
+		transition: all 0.8s ease-in;
 	}
 
 	/*! setas etapa  */
 	.seta-etapas {
-		margin: 12px 0 0 100px;
+		display: flex;
+		margin: 12px 0 0 140px;
+		z-index: 0;
+	}
+
+	.etapa-resposive .seta-etapas {
+		justify-content: space-between;
+		transform: translateX(-150px);
+		transition: all 0.6s ease-out;
+		opacity: 0;
+	}
+
+	.seta-etapas.visivel {
+		opacity: 1;
+		transform: translateX(0);
 	}
 
 	/** animations  */
 
 	.text-etapas-extra {
-		font-size: 17px;
-		width: 260px;
+		color: white;
+		font-family: "Korolev", sans-serif;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		margin-top: 10px;
+		width: 290px;
 		height: auto;
+		border-radius: 5px;
+		z-index: 1;
+		margin-left: 10px;
 	}
 
 	.text-etapas-extra h3,
 	p {
-		margin: 0;
-		margin-bottom: 3%;
+		margin: 10px;
 		text-align: left;
 	}
 	/** animação de texto  */
@@ -436,28 +362,18 @@
 	/*? ########### section ###########  */
 
 	.caixa {
-		transform: scale(1.08);
-		transform-origin: top center;
-		width: 78%;
-		height: 18%;
-		border-radius: 25px;
+		width: 80%;
+		height: 80%;
+		border-radius: 40px;
 	}
-
-	.caixa h1 {
-		left: 13%;
-		font-size: clamp(1rem, 3vw, 2rem);
-	}
-
 	.caixa img {
+		width: 50%;
 		height: auto;
-		width: 57%;
-		top: 10%;
-		left: 56%;
+		margin-top: 0;
 	}
 
 	/*? ########### section ###########  */
 
-	/*? ########### section ###########  */
 	.instagram,
 	.youtube {
 		bottom: 14%;
@@ -470,181 +386,176 @@
 	}
 
 	.youtube {
-		position: absolute;
 		top: auto;
 		left: 18%;
 		width: 7%;
 	}
 	/*? ########### section ###########  */
 
-	/*? ############# footer ############# */
+	/*? ########### footer ###########  */
 
 	.footer-container {
-		max-width: 100%;
+		width: 90%;
 	}
 
 	.footer p {
-		font-size: clamp(0.8rem, 2vw, 1rem);
-		margin: 0;
+		font-size: clamp(1.2rem, 2vw, 1.8rem);
+		margin-bottom: 5%;
 	}
 
-	.footer .creditos {
-		font-size: clamp(0.75rem, 1.8vw, 0.95rem);
-		opacity: 0.85;
-	}
-
-	.footer .creditos strong {
-		letter-spacing: 0.5px;
-	}
-
-	/*? ############# footer ############# */
+	/*? ########### footer ###########  */
 
 	.whatsapp-float {
-		right: 14px;
-		bottom: 14px;
-		width: 48px;
-		height: 48px;
+		right: 40px;
+		bottom: 40px;
+		width: 80px;
+		height: 80px;
 	}
 
 	.whatsapp-float svg {
-		width: 50%;
-		height: 50%;
+		width: 59%;
+		height: 59%;
 	}
 }
 
 @media (max-width: 381px) {
-	header img {
-		position: absolute;
-		top: 38%;
+	.container-video video,
+	.imgUm-ltrGir img,
+	.container-img-dois img,
+	.container-img-tres img,
+	.container-rf .img-princ {
+		width: 94%;
+		height: auto;
 	}
 
-	.img-logo {
+	/** header */
+
+	header {
+		display: flex;
+		gap: 2%;
+	}
+
+	header img {
 		width: 26%;
 		height: auto;
-		left: 3%;
 	}
 
 	header p {
-		position: relative;
 		display: flex;
-		left: 32%;
-		font-family: "Korolev";
-		font-size: 2vw;
-		margin-top: 5%;
 	}
 
 	p strong {
-		font-weight: 980;
+		font-weight: 900;
 	}
 
-	.icons {
-		width: 28%;
-		height: auto;
-	}
-
-	header .icons {
-		position: absolute;
-		right: 2%;
-	}
-
-	/*? ########### section ###########  */
-	.video video {
-		width: 110%;
-	}
-	/*? ########### section ###########  */
+	/** header */
 
 	/*? ########### section ###########  */
 	/** imagem com a animação de redemoinho */
-	.imagem1 {
-		transform: scale(1.02);
-		transform-origin: top center;
-	}
 
 	.textoimg1 {
-		left: 68%;
-
-		h2 {
-			font-size: clamp(0.8rem, 5vw, 1.2rem);
-		}
-
-		p {
-			font-size: clamp(0.8rem, 2vw, 1rem);
-		}
+		right: 10%;
 	}
 
-	.circle-text {
-		width: 30%;
-		height: 30%;
-		top: 45%;
-		left: 38%;
-		font-size: 7px;
-		display: flex;
+	.rotating-container {
+		top: 8%;
+		left: 10%;
+		width: 20%;
+		height: 46%;
 	}
 
 	.circle-text span {
-		top: -130%;
-		left: 46%;
-		transform-origin: 0 50px; /* define o raio */
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		transform-origin: 2px 60px; /* define o raio */
 	}
 
-	.lgr {
-		left: 53%;
-		top: 60%;
+	.lgr img {
+		width: 60%;
+		height: auto;
 	}
-
 	/** imagem com a animação de redemoinho */
 	/*? ########### section ###########  */
 
 	/*? ########### section ###########  */
 
-	.text-imgs-lpg {
-		margin-bottom: 0;
-	}
-
-	.text-imgs-lpg h1 {
-		margin-top: 0;
-		margin-left: 8px;
-		margin-bottom: 40px;
-		font-size: 190%;
-	}
-
-	.carrossel {
-		width: 100%;
-		height: auto;
-	}
-
 	.conteiner-carrossel img {
-		width: 59%;
+		width: 60%;
 		height: auto;
 	}
 
-	/*? ########### section ###########  */
+	.box_shdw-crrsl {
+		box-shadow: inset #000000 5px -10px 30px, inset #000000 -5px -10px 30px;
+	}
 
-	/*? ########### section ###########  */
+	/** animação de texto  */
 
-	/** animations  */
+	.container-info {
+		margin-top: 100px;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+	}
 
 	.etapa-resposive {
-		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	}
+	/** animations  */
+
+	.etapa-resposive .text-etapas-extra {
+		opacity: 0;
+		justify-content: space-between;
+		transform: translateX(20px);
+		transition: all 0.2s ease-out;
+	}
+
+	.text-etapas-extra.visivel {
+		opacity: 1;
+		transform: translateX(0);
+		transition: all 0.8s ease-in;
 	}
 
 	/*! setas etapa  */
 	.seta-etapas {
-		margin: 12px 0 0 100px;
+		display: flex;
+		margin: 12px 0 0 140px;
+		z-index: 0;
+	}
+
+	.etapa-resposive .seta-etapas {
+		justify-content: space-between;
+		transform: translateX(-150px);
+		transition: all 0.6s ease-out;
+		opacity: 0;
+	}
+
+	.seta-etapas.visivel {
+		opacity: 1;
+		transform: translateX(0);
 	}
 
 	/** animations  */
 
 	.text-etapas-extra {
-		font-size: 17px;
-		width: 260px;
+		color: white;
+		font-family: "Korolev", sans-serif;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		margin-top: 10px;
+		width: 290px;
 		height: auto;
+		border-radius: 5px;
+		z-index: 1;
+		margin-left: 10px;
 	}
 
 	.text-etapas-extra h3,
 	p {
-		margin: 0;
-		margin-bottom: 3%;
+		margin: 10px;
 		text-align: left;
 	}
 	/** animação de texto  */
@@ -654,29 +565,17 @@
 	/*? ########### section ###########  */
 
 	.caixa {
-		transform: scale(1.08);
-		transform-origin: top center;
-		width: 78%;
-		height: 22%;
-		border-radius: 25px;
-		align-items: center;
+		width: 80%;
+		height: 80%;
+		border-radius: 40px;
 	}
-
-	.caixa h1 {
-		left: 12%;
-		font-size: clamp(0.9rem, 3vw, 2rem);
-	}
-
 	.caixa img {
+		width: 50%;
 		height: auto;
-		width: 57%;
-		top: 5%;
-		left: 56%;
+		margin-top: 0;
 	}
 
 	/*? ########### section ###########  */
-
-	/*? ############# section ############# */
 
 	.instagram,
 	.youtube {
@@ -685,51 +584,39 @@
 
 	.instagram {
 		top: auto;
-
 		left: 10%;
 		width: 5%;
 	}
 
 	.youtube {
-		position: absolute;
 		top: auto;
 		left: 18%;
 		width: 7%;
 	}
-	/*? ############# section ############# */
+	/*? ########### section ###########  */
 
-	/*? ############# footer ############# */
+	/*? ########### footer ###########  */
 
 	.footer-container {
-		width: 100%;
-		
+		width: 90%;
 	}
 
 	.footer p {
-		font-size: clamp(0.8rem, 2vw, 1rem);
-		margin: 0;
+		font-size: clamp(1.2rem, 2vw, 1.8rem);
+		margin-bottom: 5%;
 	}
 
-	.footer .creditos {
-		font-size: clamp(0.75rem, 1.8vw, 0.95rem);
-		opacity: 0.85;
-	}
-
-	.footer .creditos strong {
-		letter-spacing: 0.5px;
-	}
-
-	/*? ############# footer ############# */
+	/*? ########### footer ###########  */
 
 	.whatsapp-float {
-		right: 14px;
-		bottom: 14px;
-		width: 48px;
-		height: 48px;
+		right: 40px;
+		bottom: 40px;
+		width: 80px;
+		height: 80px;
 	}
 
 	.whatsapp-float svg {
-		width: 50%;
-		height: 50%;
+		width: 59%;
+		height: 59%;
 	}
 }
