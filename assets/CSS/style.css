@@ -83,8 +83,8 @@ header img {
 	position: absolute;
 	color: white;
 	text-align: right;
-	right: 22%;
-	bottom: 18%;
+	right: 20%;
+	bottom: 10%;
 }
 
 .textoimg1 h2 {
@@ -116,183 +116,26 @@ header img {
 	text-align: center;
 }
 
-/* texto circular */
-.circle-text {
-	/* border: 1px solid red; */
-	display: flex;
-	width: 30%;
-	height: 30%;
-	color: white;
-	font-size: clamp(0.4rem, 2vw, 1rem);
-	letter-spacing: 6px; /* espaço consistente entre caracteres */
-	animation: spin 20s linear infinite;
+.container-text-img-roting img {
+	width: 100%;
+	height: auto;
 }
 
-/* letras ao redor */
-.circle-text span {
-	transform: scale(0.98);
-	font-family: "Million Design", sans-serif;
-	position: absolute;
-	display: flex;
-	top: -120%;
-	left: 50%;
-	transform-origin: 2px 115px; /* define o raio */
-}
-
-/* distribuição das 45 letras (aprox 8° cada) */
-.circle-text span:nth-child(1) {
-	transform: rotate(0deg);
-}
-.circle-text span:nth-child(2) {
-	transform: rotate(8deg);
-}
-.circle-text span:nth-child(3) {
-	transform: rotate(16deg);
-}
-.circle-text span:nth-child(4) {
-	transform: rotate(24deg);
-}
-.circle-text span:nth-child(5) {
-	transform: rotate(32deg);
-}
-.circle-text span:nth-child(6) {
-	transform: rotate(40deg);
-}
-.circle-text span:nth-child(7) {
-	transform: rotate(48deg);
-}
-.circle-text span:nth-child(8) {
-	transform: rotate(56deg);
-}
-.circle-text span:nth-child(9) {
-	transform: rotate(64deg);
-}
-.circle-text span:nth-child(10) {
-	transform: rotate(72deg);
-}
-.circle-text span:nth-child(11) {
-	transform: rotate(80deg);
-}
-.circle-text span:nth-child(12) {
-	transform: rotate(88deg);
-}
-.circle-text span:nth-child(13) {
-	transform: rotate(96deg);
-}
-.circle-text span:nth-child(14) {
-	transform: rotate(104deg);
-}
-.circle-text span:nth-child(15) {
-	transform: rotate(112deg);
-}
-.circle-text span:nth-child(16) {
-	transform: rotate(120deg);
-}
-.circle-text span:nth-child(17) {
-	transform: rotate(128deg);
-}
-.circle-text span:nth-child(18) {
-	transform: rotate(136deg);
-}
-.circle-text span:nth-child(19) {
-	transform: rotate(144deg);
-}
-.circle-text span:nth-child(20) {
-	transform: rotate(152deg);
-}
-.circle-text span:nth-child(21) {
-	transform: rotate(160deg);
-}
-.circle-text span:nth-child(22) {
-	transform: rotate(168deg);
-}
-.circle-text span:nth-child(23) {
-	transform: rotate(176deg);
-}
-.circle-text span:nth-child(24) {
-	transform: rotate(184deg);
-}
-.circle-text span:nth-child(25) {
-	transform: rotate(192deg);
-}
-.circle-text span:nth-child(26) {
-	transform: rotate(200deg);
-}
-.circle-text span:nth-child(27) {
-	transform: rotate(208deg);
-}
-.circle-text span:nth-child(28) {
-	transform: rotate(216deg);
-}
-.circle-text span:nth-child(29) {
-	transform: rotate(224deg);
-}
-.circle-text span:nth-child(30) {
-	transform: rotate(232deg);
-}
-.circle-text span:nth-child(31) {
-	transform: rotate(240deg);
-}
-.circle-text span:nth-child(32) {
-	transform: rotate(248deg);
-}
-.circle-text span:nth-child(33) {
-	transform: rotate(256deg);
-}
-.circle-text span:nth-child(34) {
-	transform: rotate(264deg);
-}
-.circle-text span:nth-child(35) {
-	transform: rotate(272deg);
-}
-.circle-text span:nth-child(36) {
-	transform: rotate(280deg);
-}
-.circle-text span:nth-child(37) {
-	transform: rotate(288deg);
-}
-.circle-text span:nth-child(38) {
-	transform: rotate(296deg);
-}
-.circle-text span:nth-child(39) {
-	transform: rotate(304deg);
-}
-.circle-text span:nth-child(40) {
-	transform: rotate(312deg);
-}
-.circle-text span:nth-child(41) {
-	transform: rotate(320deg);
-}
-.circle-text span:nth-child(42) {
-	transform: rotate(328deg);
-}
-.circle-text span:nth-child(43) {
-	transform: rotate(336deg);
-}
-.circle-text span:nth-child(44) {
-	transform: rotate(344deg);
-}
-.circle-text span:nth-child(45) {
-	transform: rotate(352deg);
+.text-img-roting {
+    animation: spin 8s linear infinite;
 }
 
 @keyframes spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-.rotating-container .lgr {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .lgr {
-	perspective: 1000px; /* cria o efeito de profundidade */
+	perspective: 1000px;
 	position: absolute;
 	top: 50%;
 	left: 50%;

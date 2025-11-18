@@ -2,6 +2,220 @@
 
 /* Tablets (até 1024px) */
 @media (max-width: 1024px) {
+	html,
+	body {
+		background-image: url("../img/bck-grnd-rhema.png");
+		background-size: contain; /* ajusta pro tamanho da tela */
+		background-attachment: scroll; /* evita bug no mobile */
+	}
+
+	.container-video video,
+	.imgUm-ltrGir img,
+	.container-img-dois img,
+	.container-img-tres img,
+	.container-rf .img-princ {
+		width: 80%;
+		height: auto;
+	}
+
+	/** header */
+
+	header {
+		display: flex;
+		gap: 2%;
+	}
+
+	header img {
+		width: 26%;
+		height: auto;
+	}
+
+	header p {
+		display: flex;
+	}
+
+	p strong {
+		font-weight: 900;
+	}
+
+	/** header */
+
+	/*? ########### section ###########  */
+	/** imagem com a animação de redemoinho */
+
+	.textoimg1 {
+		top: 48%;
+		right: 12%;
+		line-height: 0.7;
+		h2 {
+			font-size: clamp(1.6rem, 4vw, 3rem);
+		}
+
+		p {
+			font-size: clamp(1.25rem, 2vw, 3rem);
+		}
+	}
+
+	.rotating-container {
+		top: 8%;
+		left: 10%;
+		width: 22%;
+		height: 40%;
+	}
+
+	.lgr img {
+		width: 50%;
+		height: auto;
+	}
+	/** imagem com a animação de redemoinho */
+	/*? ########### section ###########  */
+
+	/*? ########### section ###########  */
+
+	.text-imgs-lpg h1 {
+		font-size: clamp(4rem, 4vw, 3.6rem);
+	}
+
+	.conteiner-carrossel img {
+		width: 60%;
+		height: auto;
+	}
+
+	.box_shdw-crrsl {
+		box-shadow: inset #000000 5px -10px 30px, inset #000000 -5px -10px 30px;
+	}
+
+	/*? ########### section ###########  */
+	/** animação de texto  */
+
+	.container-info {
+		margin-top: 100px;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	.etapa-resposive {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	}
+	/** animations  */
+
+	.etapa-resposive .text-etapas-extra {
+		opacity: 0;
+		justify-content: space-between;
+		transform: translateX(20px);
+		transition: all 0.2s ease-out;
+	}
+
+	.text-etapas-extra.visivel {
+		opacity: 1;
+		transform: translateX(0);
+		transition: all 0.8s ease-in;
+	}
+
+	/*! setas etapa  */
+	.seta-etapas {
+		display: flex;
+		margin: 12px 20px 0 140px;
+		z-index: 0;
+	}
+
+	.etapa-resposive .seta-etapas {
+		justify-content: space-between;
+		transform: translateX(-150px);
+		transition: all 0.6s ease-out;
+		opacity: 0;
+	}
+
+	.seta-etapas.visivel {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	/** animations  */
+
+	.text-etapas-extra {
+		color: white;
+		font-family: "Korolev", sans-serif;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		margin-top: 10px;
+		width: 100%;
+		height: auto;
+		border-radius: 5px;
+		z-index: 1;
+		margin-left: 10px;
+	}
+
+	.text-etapas-extra h3,
+	p {
+		margin: 10px;
+		text-align: left;
+	}
+	/** animação de texto  */
+
+	/*? ########### section ###########  */
+
+	/*? ########### section ###########  */
+
+	.caixa {
+		width: 70%;
+		height: 80%;
+		border-radius: 40px;
+	}
+	.caixa img {
+		width: 50%;
+		height: auto;
+		margin-top: 0;
+	}
+
+	/*? ########### section ###########  */
+
+	.instagram,
+	.youtube {
+		bottom: 13%;
+	}
+
+	.instagram {
+		top: auto;
+		left: 17%;
+		width: 4%;
+	}
+
+	.youtube {
+		top: auto;
+		left: 24%;
+		width: 6%;
+	}
+	/*? ########### section ###########  */
+
+	/*? ########### footer ###########  */
+
+	.footer-container {
+		width: 90%;
+	}
+
+	.footer p {
+		font-size: clamp(1.2rem, 2vw, 1.8rem);
+		margin-bottom: 5%;
+	}
+
+	/*? ########### footer ###########  */
+
+	.whatsapp-float {
+		right: 40px;
+		bottom: 40px;
+		width: 80px;
+		height: 80px;
+	}
+
+	.whatsapp-float svg {
+		width: 59%;
+		height: 59%;
+	}
 }
 
 /* Smartphones grandes (até 768px) */
@@ -48,19 +262,15 @@
 	/** imagem com a animação de redemoinho */
 
 	.textoimg1 {
-		right: 10%;
-	}
-
-	.textoimg1 {
 		top: 45%;
 		right: 8%;
 		line-height: 0.7;
 		h2 {
-			font-size: clamp(2.2rem, 3vw, 3rem);
+			font-size: clamp(1.6rem, 3vw, 3rem);
 		}
 
 		p {
-			font-size: clamp(1.4rem, 2vw, 3rem);
+			font-size: clamp(1rem, 2vw, 3rem);
 		}
 	}
 
@@ -71,15 +281,8 @@
 		height: 40%;
 	}
 
-	.circle-text span {
-		top: -94%;
-		left: 52%;
-		font-size: clamp(0.2rem, 1.8vw, 0.8rem);
-		transform-origin: 2px 70px; /* define o raio */
-	}
-
 	.lgr img {
-		width: 60%;
+		width: 50%;
 		height: auto;
 	}
 	/** imagem com a animação de redemoinho */
@@ -263,26 +466,13 @@
 	/** imagem com a animação de redemoinho */
 
 	.textoimg1 {
-		top: 40%;
+		top: 45%;
 		h2 {
-			font-size: clamp(1.4rem, 4vw, 4rem);
+			font-size: clamp(1.3rem, 3vw, 5rem);
 		}
 		p {
-			font-size: clamp(0.88rem, 3vw, 4rem);
+			font-size: clamp(0.80rem, 3vw, 4rem);
 		}
-	}
-
-	.rotating-container {
-		left: 5%;
-		width: 25%;
-		height: 46%;
-	}
-
-	.circle-text span {
-		top: -120%;
-		left: 40%;
-		font-size: clamp(0.6rem, 1.8vw, 1rem);
-		transform-origin: 2px 45px; /* define o raio */
 	}
 
 	.lgr img {
@@ -297,6 +487,11 @@
 	.text-imgs-lpg {
 		margin-bottom: 40px;
 	}
+
+	.text-imgs-lpg h1 {
+		font-size: clamp(2.8rem, 4vw, 3.6rem);
+	}
+
 	/*? ########### section ###########  */
 
 	/*? ########### section ###########  */
@@ -393,17 +588,6 @@
 			font-size: clamp(0.6rem, 2vw, 0.4rem);
 		}
 	}
-
-	.rotating-container {
-		width: 26%;
-		height: 48%;
-	}
-
-	.circle-text span {
-		top: -122%;
-		left: 40%;
-		transform-origin: 2px 40px; /* define o raio */
-	}
 	/** imagem com a animação de redemoinho */
 	/*? ########### section ###########  */
 
@@ -412,6 +596,18 @@
 	.text-imgs-lpg {
 		margin-bottom: 40px;
 	}
+	/*? ########### section ###########  */
+
+	/*? ########### section ###########  */
+
+	.text-imgs-lpg {
+		margin-left: 10px;
+	}
+
+	.text-imgs-lpg h1 {
+		font-size: clamp(2rem, 4vw, 3.6rem);
+	}
+
 	/*? ########### section ###########  */
 
 	/*? ########### section ###########  */
