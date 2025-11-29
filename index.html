@@ -191,7 +191,7 @@
 
 			<section>
 				<div class="container-info">
-					<button class="toggle-info">Saiba mais sobre nosso processo</button>
+					<!-- <button class="toggle-info">Saiba mais sobre nosso processo</button> -->
 					<div class="extra-info">
 						<div class="etapa-resposive">
 							<div class="seta-etapas-resonsive ">
@@ -305,20 +305,20 @@
 
 			etapas.forEach((etapa) => observer.observe(etapa));
 
-			// botão de saiba mais
-			const toggleBtn = document.querySelector(".toggle-info");
-			const extraInfo = document.querySelector(".extra-info");
+			// // botão de saiba mais
+			// const toggleBtn = document.querySelector(".toggle-info");
+			// const extraInfo = document.querySelector(".extra-info");
 
-			toggleBtn.addEventListener("click", () => {
-				extraInfo.classList.toggle("active");
-				if (extraInfo.classList.contains("active")) {
-					extraInfo.style.display = "block";
-					toggleBtn.textContent = "Mostrar menos";
-				} else {
-					extraInfo.style.display = "none";
-					toggleBtn.textContent = "Saiba mais sobre nosso processo";
-				}
-			});
+			// toggleBtn.addEventListener("click", () => {
+			// 	extraInfo.classList.toggle("active");
+			// 	if (extraInfo.classList.contains("active")) {
+			// 		extraInfo.style.display = "block";
+			// 		toggleBtn.textContent = "Mostrar menos";
+			// 	} else {
+			// 		extraInfo.style.display = "none";
+			// 		toggleBtn.textContent = "Saiba mais sobre nosso processo";
+			// 	}
+			// });
 		</script>
 	</body>
 </html>

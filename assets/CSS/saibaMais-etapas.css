@@ -8,15 +8,15 @@
 }
 
 /* Conteúdo extra oculto por padrão no mobile */
-.extra-info {
+/* .extra-info {
   display: none;
   width: 100%;
   margin-top: 10px;
   padding: 20px 15px;
   border-radius: 8px;
-}
+} */
 
-/* Botão */
+/* Botão
 .toggle-info {
   display: none;
   background: #3f3f3f;
@@ -28,7 +28,7 @@
   border-radius: 5px;
   cursor: pointer;
   box-shadow: #d3d3d3 -1px 0px 10px -1px;
-}
+} */
 
 .seta-etapas {
   right: 600px;
@@ -36,15 +36,11 @@
 
 /* Só mostra o botão no celular */
 @media (max-width: 900px) {
-  .toggle-info {
+  /* .toggle-info {
     display: inline-block;
-  }
+  } */
 
   .esconder-etapas {
-    display: none;
-  }
-
-  header p {
     display: none;
   }
 }
