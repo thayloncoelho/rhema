@@ -300,6 +300,10 @@ p {
 	transform: translateX(0);
 }
 
+.seta-etapas-resonsive {
+	display: none;
+}
+
 /*? ############# section ############# */
 
 /*? ############# section ############# */
