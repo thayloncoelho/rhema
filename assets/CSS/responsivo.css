@@ -22,15 +22,16 @@
 
 	header {
 		display: flex;
-		gap: 2%;
+		gap: 12%;
 	}
 
 	header img {
-		width: 26%;
+		width: 18%;
 		height: auto;
 	}
 
 	header p {
+		width: auto;
 		display: flex;
 	}
 
@@ -86,76 +87,27 @@
 	}
 
 	/*? ########### section ###########  */
-	/** animação de texto  */
 
-	.container-info {
-		margin-top: 100px;
-		align-items: center;
-		justify-content: center;
+	.etapas {
+		margin-left: 70px;
+		gap: 30px;
+	}
+
+	.etapa {
+		width: 220px;
 		gap: 20px;
 	}
 
-	.etapa-resposive {
-		display: flex;
-		align-items: center;
-		gap: 40px;
-	}
-	/** animations  */
-
-	.etapa-resposive .text-etapas-extra {
-		opacity: 0;
-		justify-content: space-between;
-		transform: translateX(20px);
-		transition: all 0.2s ease-out;
-	}
-
-	.text-etapas-extra.visivel {
-		opacity: 1;
-		transform: translateX(0);
-		transition: all 0.8s ease-in;
-	}
-
-	/*! setas etapa  */
-	.seta-etapas {
-		display: flex;
-		margin: 12px 20px 0 140px;
-		z-index: 0;
-	}
-
-	.etapa-resposive .seta-etapas {
-		justify-content: space-between;
-		transform: translateX(-150px);
-		transition: all 0.6s ease-out;
-		opacity: 0;
-	}
-
-	.seta-etapas.visivel {
-		opacity: 1;
-		transform: translateX(0);
-	}
-
-	/** animations  */
-
-	.text-etapas-extra {
-		color: white;
-		font-family: "Korolev", sans-serif;
-		font-size: 18px;
-		font-weight: 500;
-		text-align: center;
-		margin-top: 10px;
-		width: 100%;
-		height: auto;
-		border-radius: 5px;
-		z-index: 1;
-		margin-left: 10px;
-	}
-
-	.text-etapas-extra h3,
+	.text-etapas h3,
 	p {
-		margin: 10px;
-		text-align: left;
+		width: 170px;
+		height: auto;
+		font-size: clamp(1rem, 2vw, 1.1rem);
 	}
-	/** animação de texto  */
+
+	.seta-etapas {
+		margin: 0 0 0 40px;
+	}
 
 	/*? ########### section ###########  */
 
@@ -194,13 +146,10 @@
 
 	/*? ########### footer ###########  */
 
-	.footer-container {
-		width: 90%;
-	}
-
 	.footer p {
 		font-size: clamp(1.2rem, 2vw, 1.8rem);
-		margin-bottom: 5%;
+		margin-bottom: 2%;
+		width: 100%;
 	}
 
 	/*? ########### footer ###########  */
